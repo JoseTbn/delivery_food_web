@@ -17,7 +17,7 @@ padding: 30px 10%;
 }
 
 
-li,a ,button {
+li,a ,button ,h1,h2,h3,h4,h5,p {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     color: black;
@@ -107,7 +107,6 @@ background-color: rgb(76, 148, 68,0.8);
 
 section{
    
-    background: white;
 }
 
 .container {
@@ -127,9 +126,31 @@ padding: 2%;
 cursor: pointer;
 }
 
-.container__content-left 
+.container__content-left ,
 .container__content-right:hover{
 
     transition: 0.2s all ease-out;
 
 transform: scale(1.10, 1.10);}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 25px 25px;
+    width: 19%;
+}
+
+.card__cover {
+    height:150px;
+    width: min-content;
+
+}
+
+.card__cover img {
+    border-radius: 25px 25px 0 0;
+}
+
+.card__content {
+    /* Take available height */
+}
