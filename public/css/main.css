@@ -1,0 +1,135 @@
+*{
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+background:azure;
+text-decoration: none;
+}
+
+
+/* header navbar*/
+
+header{
+width:100%;
+height:30%;
+/* Faire sorte que le nav bar ne soit pas coller aux bordures , 30px top et bottom , 10% left en right */
+padding: 30px 10%;
+}
+
+
+li,a ,button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.main{
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.left__navbar-side{
+display: flex;
+width: 20%;
+height: 100%;
+justify-content: center;
+align-items: center;
+justify-content: space-evenly;
+}
+
+
+.left__navbar-side .searchbar{
+height: 40%;
+padding: 10px;
+
+    border-radius: 7px;
+    background: #EDEEF2;
+    border: none;
+}
+
+.right__navbar-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+
+.navbar__links{
+    list-style: none;
+}
+
+
+.navbar__links li{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+.navbar__links li a {
+    transition: all 0.3s ease 0s;
+  
+}
+.navbar__links li a:hover {
+    color: rgb(74, 145, 74);
+}
+
+button{
+cursor: pointer; 
+background-color: rgb(76, 148, 68,1);
+    border: none;
+    border-radius: 50px;
+     padding: 10px 25px;
+     transition: all 0.3s ease 0s;
+}
+button:hover{
+background-color: rgb(76, 148, 68,0.8);
+
+}
+
+.light_line{
+   
+    border: 1px solid lightblue;
+   
+}
+
+
+/* Sections*/
+
+section{
+   
+    background: white;
+}
+
+.container {
+    display: flex;
+}
+
+.container__column {
+  display: flex;
+width: 100%;
+justify-content: center;
+padding: 2% ;
+}
+
+.container__content-left, 
+.container__content-right{
+padding: 2%;
+cursor: pointer;
+}
+
+.container__content-left 
+.container__content-right:hover{
+
+    transition: 0.2s all ease-out;
+
+transform: scale(1.10, 1.10);}
