@@ -2,12 +2,15 @@
    box-sizing: border-box;
     margin: 0;
     padding: 0;
-background:azure;
 text-decoration: none;
 }
 
 
 /* header navbar*/
+body{
+    background:azure;
+
+}
 
 header{
 width:100%;
@@ -80,7 +83,10 @@ padding: 10px;
   
 }
 .navbar__links li a:hover {
-    color: rgb(74, 145, 74);
+    background: rgb(74, 145, 74);
+    padding: 10px 25px;
+    border-radius: 50px;
+
 }
 
 button{
@@ -92,7 +98,6 @@ background-color: rgb(76, 148, 68,1);
      transition: all 0.3s ease 0s;
 }
 button:hover{
-background-color: rgb(76, 148, 68,0.8);
 
 }
 
@@ -105,8 +110,18 @@ background-color: rgb(76, 148, 68,0.8);
 
 /* Sections*/
 
-section{
-   
+section h2{
+   padding: 1rem;
+   background: lightblue;
+   color: #000000;
+   margin: 0 auto;
+   text-align: center;
+   width: 85%;
+   border-radius: 15px;
+}
+
+.map{
+    padding: 5rem 0;
 }
 
 .container {
@@ -126,23 +141,69 @@ padding: 2%;
 cursor: pointer;
 }
 
-.container__content-left ,
+/* .container__content-left ,
 .container__content-right:hover{
 
     transition: 0.2s all ease-out;
 
-transform: scale(1.10, 1.10);}
+transform: scale(1.10, 1.10);} */
+
+.cards_section{
+    width: 100%;
+}
+.cards_section h4 {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.cards_section p{
+    margin-left: 35px;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 10px;
+    
+
+}
+
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+
+  
+}
+
+.cards__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+
+ 
+}
+
 
 
 .card {
     display: flex;
     flex-direction: column;
-    border-radius: 0 0 25px 25px;
-    width: 19%;
+    border-radius:  25px 25px;
+    width: min-content;
+background-color: #f5e7df;
+margin: 25px 25px;
+
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.2s all ease-out;
+}
+
+
 .card__cover {
-    height:150px;
+    height:190px;
     width: min-content;
 
 }
@@ -153,4 +214,10 @@ transform: scale(1.10, 1.10);}
 
 .card__content {
     /* Take available height */
+    flex: 1;
+}
+.food-type{
+padding: 0 20px 10px ;    
+width: fit-content;
+
 }
